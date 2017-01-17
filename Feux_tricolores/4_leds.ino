@@ -1,3 +1,4 @@
+// Le include suivant m'est nécessaire car j'utilise Atom en IDE
 #include "Arduino.h"
 
 /* On continue avec les define hardware (Pins) */
