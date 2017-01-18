@@ -56,7 +56,7 @@ void loop() {
 
   if(i_bp1 || i_bp3)
     statut = 1;
-  else if(i_bp2 || i_bp3)
+  else if(i_bp2 || i_bp4)
     statut = 2;
 
   if (statut==1)
