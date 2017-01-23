@@ -40,7 +40,7 @@ void affichetab()
   affi = 0;
 }
 
-int deltab()
+int deltab() // retrait par LIFO (Last In First Out), ce qu'on appelle une pile
 {
   if(index>=1)
   {
@@ -49,6 +49,20 @@ int deltab()
     tab[index] = 0;
     return r;
   }
+}
+
+int outfifo() // retrait par FIFO (Fast In First Out), ce qu'on appelle une file
+{
+  int r = tab[0];
+  
+  for(int i = 0; i<2;i++)
+  {
+   tab[i]=tab[i+1]; 
+  }
+  
+  tab[3] = 0;
+  
+  return r;
 }
 
 void setup()
