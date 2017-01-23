@@ -14,7 +14,7 @@ Les 2 autres s'éteignent.
 On appuie sur chaque bouton 1 par 1 et on vérifie que tout marche bien.
 
 ###2ème étape : 
-Si pendant le délai de 3 secondes un autre véhicule arrive à une intersection alors l'information est gardée en mémoire. Les feux changeront d'état en fonction de la pile (pile = FIFO = First In First Out = premier arrivé premier sorti).
+Si pendant le délai de 3 secondes un autre véhicule arrive à une intersection alors l'information est gardée en mémoire. Les feux changeront d'état en fonction de la file (file = FIFO = First In First Out = premier arrivé premier sorti).
 
 ###3ème étape : 
 Gérer les appuis boutons à l'aide d'interruption.
