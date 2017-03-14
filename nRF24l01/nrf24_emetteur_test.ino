@@ -20,19 +20,18 @@ char mot2[] = "World !";
 void createMessage(char valeur1[], char valeur2[])
 {
   int size1 = sizeof(mot1);
-  Serial.println(size1);
+  int size2 = sizeof(mot2);
   
   for(int i = 0; i < size1-1 ; i++)
   {
     message[i] = valeur1[i];
   }
-  
-  int size2 = sizeof(mot2);
-  Serial.println(size2);
+
+  message[size1-1] = ';';
   
   for(int j = 0; j <= size2; j++)
   {
-    message[j+size1-1] = valeur2[j];
+    message[j+size1] = valeur2[j];
   }  
 
   Serial.println(message);
